@@ -21,5 +21,5 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.2
     - name: Publish NuGet
       run: |
-        dotnet pack --configuration Release
-        dotnet nuget push "bin/Release/maven-wrapper.1.0.0.nupkg" --source "github"
+        nuget pack --configuration Release
+        nuget push "bin/Release/maven-wrapper.1.0.0.nupkg" --source "github"
