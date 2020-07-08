@@ -22,5 +22,5 @@ jobs:
     - name: Publish NuGet
       run: |
         nuget spec
-        nuget pack maven-wrapper.nuspec
-        nuget push "maven-wrapper.1.0.0.nupkg" --source "github"
+        nuget pack Package.nuspec
+        nuget push "Package.nupkg" --source "github"
